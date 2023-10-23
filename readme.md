@@ -1,4 +1,4 @@
-# Sam and Johns App
+# Sam and John's App
 
 TODO: Brief outline of your project describing the dataset and a link to it.
 
