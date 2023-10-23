@@ -1,4 +1,4 @@
-# Jinder
+# Sam and Johns App
 
 TODO: Brief outline of your project describing the dataset and a link to it.
 
