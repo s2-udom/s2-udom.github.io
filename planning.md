@@ -1,4 +1,4 @@
-# Project Proposal
+# Electric Vehical Charging Point App
 
 ## Business Case
 
