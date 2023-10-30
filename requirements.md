@@ -6,6 +6,9 @@
 TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
     Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
 
+    As an electric vehicle driver I want to use an app so that I can locate the nearest charging point
+    As an electric vehicle driver I want to know when I am near a electric vehicle charging point so that I can charge my vehicle
+
 ### Actors
 TODO: List and describe the actors/users for this product.
 
