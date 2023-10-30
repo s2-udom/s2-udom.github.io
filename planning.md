@@ -12,7 +12,7 @@ TODO: This product will provide...
 TODO: Google maps, basic internet use...
 
 ### Expected Risks
-TODO: What are the main risks of this project?
+TODO: Lack of charging infrastructure charging points are few and far between
 
 ## Project Scope
 TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
