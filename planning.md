@@ -3,13 +3,13 @@
 ## Business Case
 
 ### Problem statement
-TODO: Replace the example text like this with text that describes your project. What is the problem to be addressed?
+TODO: The electric vehical drivers constantly need to know where the nearest public charging point is. The app tackles this problem by using a drivers locations and finding the nearest charging point to the user. It will also take into account price and maximum charging time. 
 
 ### Business benefits
-TODO: List high-level benefits that this product will provide.
+TODO: This product will provide... 
 
 ### Options Considered
-TODO: What are some other customer options or leading products that address the same needs?
+TODO: Google maps, basic internet use...
 
 ### Expected Risks
 TODO: What are the main risks of this project?
