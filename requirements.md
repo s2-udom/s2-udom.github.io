@@ -10,8 +10,8 @@ TODO: Write brief user stories to explain how various actors would interact with
     As an electric vehicle driver I want to know when I am near a electric vehicle charging point so that I can charge my vehicle
 
 ### Actors
-TODO: List and describe the actors/users for this product.
-
+TODO: List and describe the actors/users for this product:
+ 
 Electric vehical driver: Someone who both owns and drives a vehicle powered by electricity
 
 ### Use Cases
