@@ -11,6 +11,7 @@ TODO: Write brief user stories to explain how various actors would interact with
 
 ### Actors
 TODO: List and describe the actors/users for this product.
+Electric vehical driver: Someone who both owns and drives a vehicle powered by electricity
 
 ### Use Cases
 TODO: Describe each use case (at least one per team member).
