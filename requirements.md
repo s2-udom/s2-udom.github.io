@@ -19,7 +19,7 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-| TODO: UC1        | TODO: USE-CASE NAME | 
+| TODO: UC1        | TODO: Locate nearest EV charging point | 
 | -------------------------------------- | ------------------- |
 | **Description** | TODO: Locate the nearest EV charging point to driver. |
 | **Actors** | TODO: Electric vehical driver |
