@@ -1,4 +1,4 @@
-# Requirements
+# EV charging point finder app
 
 ## User Needs
 
