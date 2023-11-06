@@ -24,7 +24,7 @@ TODO: Describe each use case (at least one per team member).
 | **Description** | TODO: Locate the nearest EV charging point to driver. |
 | **Actors** | TODO: Electric vehical driver |
 | **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
-| **Steps** | TODO 1. Ask user for persmission to access their location
+| **Steps** |      1. Ask user for persmission to access their location
 |           |      2. Give permission for geo-location
 |           |      3. Retrieve nearest EV charging points from the database
 |           |      4. View table of nearest EV charging points
