@@ -25,9 +25,9 @@ TODO: Describe each use case (at least one per team member).
 | **Actors** | TODO: Electric vehical driver |
 | **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
 | **Steps** | TODO 1. Ask user for persmission to access their location
-                   2. Give permission for geo-location
-                   3. Retrieve nearest EV charging points from the database
-                  | 4. View table of nearest EV charging points
+|           |      2. Give permission for geo-location
+|           |      3. Retrieve nearest EV charging points from the database
+|           |      4. View table of nearest EV charging points
 | **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
