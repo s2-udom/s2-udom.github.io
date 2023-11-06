@@ -19,11 +19,25 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-| TODO: USE-CASE ID e.g. UC1, UC2, ... | TODO: USE-CASE NAME | 
+| TODO: UC1        | TODO: USE-CASE NAME | 
 | -------------------------------------- | ------------------- |
 | **Description** | TODO: Locate the nearest EV charging point to driver. |
 | **Actors** | TODO: Electric vehical driver |
-| **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
+| **Assumptions** | TODO: Browser has geo locqtion</td></tr>
+| **Steps** |      1. View table of EV charging points
+|           |      2. Ask user for persmission to access their location
+|           |      3. Give permission for geo-location
+|           |      4. Retrieve nearest EV charging points from the database
+|           |      5. View table of nearest EV charging points
+| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
+| **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
+| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+
+| TODO: UC2        | TODO: USE-CASE NAME | 
+| -------------------------------------- | ------------------- |
+| **Description** | TODO: Locate the nearest EV charging point to driver. |
+| **Actors** | TODO: Electric vehical driver |
+| **Assumptions** | TODO: Browser has geo locqtion</td></tr>
 | **Steps** |      1. View table of EV charging points
 |           |      2. Ask user for persmission to access their location
 |           |      3. Give permission for geo-location
