@@ -1,4 +1,4 @@
-# Sam and John's App
+# Electric Vehicle Charging Point Finder App
 
 TODO: Brief outline of your project describing the dataset and a link to it.
 
