@@ -7,7 +7,6 @@ TODO: The electric vehical drivers constantly need to know where the nearest pub
 
 ### Business benefits
 TODO: This product will provide electric vehicle drivers an easy way to keep their vehicles charged and make long journeys without the risk of finding themselves too far from the nearest charging point. 
-
 ### Options Considered
 TODO: Google maps, basic internet use
 
@@ -17,4 +16,4 @@ TODO: Lack of charging infrastructure charging points are few and far between
 ## Project Scope
 TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
 
-![Insert your Context Diagram Here](images/Untitled-drawing.png)
+![Insert your Context Diagram Here](images/Untitled_drawing.png)
