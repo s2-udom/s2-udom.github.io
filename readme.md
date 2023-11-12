@@ -1,6 +1,6 @@
 # Electric Vehicle Charging Point Finder App
 
-TODO: Brief outline of your project describing the dataset and a link to it.
+An app that locates the nearest electric vehicle charging point. Uses the EV charging point dataset from Bristol Open Data which lists charging points and shows their location on a map. Will use this data set and geolocation to find nearest charging point to app user. 
 
 1. [Planning](docs/planning.md)
 2. [Requirements](docs/requirements.md)
