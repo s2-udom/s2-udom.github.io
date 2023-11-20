@@ -17,7 +17,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | -------------------------------------- | ------------------- |
 | **Description** | Locate the nearest EV charging point to driver. |
 | **Actors** |   Electric vehical driver |
-| **Assumptions** |  Browser has geo locqtion</td></tr>
+| **Assumptions** |  Browser has geo location</td></tr>
 | **Steps** |      1. View table of EV charging points
 |           |      2. Ask user for persmission to access their location
 |           |      3. Give permission for geo-location
