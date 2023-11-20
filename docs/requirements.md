@@ -13,7 +13,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 
 ### Use Cases
 
-|   UC1        | Locate nearest EV charging point | 
+|   UC1        | Show all nearby EV charging points in a list according to distance from user | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate the nearest EV charging point to driver. |
 | **Actors** |   Electric vehical driver |
