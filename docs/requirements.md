@@ -5,7 +5,7 @@
 ### User stories
 
     As an electric vehicle driver I want to use an app so that I can locate the nearest charging point
-    As an electric vehicle driver I want to know when I am near a electric vehicle charging point so that I can charge my vehicle
+    As an electric vehicle driver I want to be able to locate a rapid or superfast electric vehicle charging point so that I can charge my vehicle more quickly
 
 ### Actors
 
@@ -19,10 +19,10 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Actors** |   Electric vehical driver |
 | **Assumptions** |  Browser has geo location</td></tr>
 | **Steps** |      1. View table of EV charging points
-|           |      2. Ask user for persmission to access their location
-|           |      3. Give permission for geo-location
-|           |      4. Retrieve nearest EV charging points from the database
-|           |      5. View table of nearest EV charging points
+|           |      2. App asks user for persmission to access their location
+|           |      3. User gives permission for geo-location
+|           |      4. App retrieves nearest EV charging points from the database
+|           |      5. App displays table of nearest EV charging points in order of least distance from user
 | **Variations** |                                           |
 | **Non-functional** |                                       |
 | **Issues** |                                               |
@@ -32,11 +32,11 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Description** | Locate nearest rapid and superfast charging points near user |
 | **Actors** | Electric vehical driver |
 | **Assumptions** |  Browser has geo location</td></tr>
-| **Steps** |      1. View table of EV charging points
-|           |      2. Ask user for persmission to access their location
-|           |      3. Give permission for geo-location
-|           |      4. Retrieve nearest EV super fast charging points from the database
-|           |      5. View table of nearest EV charging points
+| **Steps** |      1. User selects rapid charging points
+|           |      2. App asks user for persmission to access their location
+|           |      3. User gives permission for geo-location
+|           |      4. App retrieve nearest EV super fast charging points from the database
+|           |      5. App displays these in a table in order of least distance from user
 | **Variations** |                                            |
 | **Non-functional** |                                        |
 | **Issues** |                                                |
@@ -55,16 +55,14 @@ FR1.1 The system should be able to collect the data of where the EV charging poi
 FR1.2 The system should ask/obtain permission from the user to access their location or have the user input a location<br/>
 FR1.3 The system should list all the EV charging point locations in a list displaying the distances to them<br/>
 
-FR2.1
+FR2.1 The system should be able to distinguish between standard charging points and superfast/rapid charging points
  
 
 
 ### Non-Functional Requirements
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
-NFR2.1: The previously inputted location by the user should be saved in a secure and encrypted location (Security)<br/>
-NFR2.2: The app should work on a standard iPhone or android phone screen, but also fit to PC screens (Portability)<br/>
-NFR2.3: The app should be quick to respond to the user's requests (Performance efficiency)<br/>
-NFR2.4: The app should also work on website browsers (Compatibility)<br/>
-NFR2.5: Data should be regularly checked and updated (Functional suitability)
+NFR1.1: The previously inputted location by the user should be saved in a secure and encrypted location (Security)<br/>
+NFR1.2: The app should work on a standard iPhone or android phone screen, but also fit to PC screens (Portability)<br/>
+NFR1.3: The app should be quick to respond to the user's requests (Performance efficiency)<br/>
+NFR1.4: The app should also work on website browsers (Compatibility)<br/>
+NFR1.5: Data should be regularly checked and updated (Functional suitability)
