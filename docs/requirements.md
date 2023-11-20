@@ -52,7 +52,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 FR1 indicates UC1
 FR2 indicates UC2
 
-FR1.1
+FR1.1</td></tr>
 FR1.2
 FR1.3
 FR1.4 
