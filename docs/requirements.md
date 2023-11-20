@@ -51,15 +51,14 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 
 FR1 indicates UC1 and FR2 indicates UC2
 
-FR2.1 The system should be able to collect the data of where the EV charging points are from Open Data Bristol
+FR1.1 The system should be able to collect the data of where the EV charging points are from Open Data Bristol
 
-FR2.2 The system should ask/obtain permission from the user to access their location or have the user input a location
+FR1.2 The system should ask/obtain permission from the user to access their location or have the user input a location
 
-FR2.3 The system should display both user location and EV charging point locations using different respective markers
+FR1.3 The system should list all the EV charging point locations in a list displaying the distances to them
 
-FR2.4 The system should display the distances between the user location and EV charging point locations
-
-FR2.5 The system should list all the EV charging point locations in a list displaying the distances to them
+FR2.1
+ 
 
 
 ### Non-Functional Requirements
