@@ -14,6 +14,9 @@ Google maps, basic internet use
 Lack of charging infrastructure charging points are few and far between
 
 ## Project Scope
-Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
+GitHub Version Control allows you to keep track of the progress of the project and revert back to old versions if needed. <br/>
+Mobile style app allows people to find electric vehicle charging points on the go making it more convienient. <br/>
+Bristol Open Data API for the data set used in the app. <br/>
+
 
 ![Insert your Context Diagram Here](images/Context.png)
