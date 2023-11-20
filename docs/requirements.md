@@ -13,7 +13,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 
 ### Use Cases
 
-| TODO: UC1        | TODO: Locate nearest EV charging point | 
+| TODO: UC1        | Locate nearest EV charging point | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate the nearest EV charging point to driver. |
 | **Actors** | TODO: Electric vehical driver |
@@ -27,7 +27,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
 
-| TODO: UC2        | TODO: USE-CASE NAME | 
+| TODO: UC2        | Show all nearby EV charging points in a list according to distance from user | 
 | -------------------------------------- | ------------------- |
 | **Description** | TODO: Locate the nearest EV charging point to driver. |
 | **Actors** | TODO: Electric vehical driver |
@@ -48,10 +48,20 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-    e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
+
+FR1 indicates UC1
+FR2 indicates UC2
+
+FR1.1
+FR1.2
+FR1.3
+FR1.4 
+
+FR2.1 The system should be able to collect the data of where the EV charging points are from Open Data Bristol
+FR2.2 The system should ask/obtain permission from the user to access their location or have the user input a location
+FR2.3 The system should display both user location and EV charging point locations using different respective markers
+FR2.4 The system should display the distances between the user location and EV charging point locations
+FR2.5 The system should list all the EV charging point locations in a list displaying the distances to them
 
 
 ### Non-Functional Requirements
