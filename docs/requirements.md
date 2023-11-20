@@ -12,13 +12,10 @@
 Electric vehical driver: Someone who both owns and drives a vehicle powered by electricity
 
 ### Use Cases
-TODO: Describe each use case (at least one per team member).
-    Give each use case a unique ID, e.g. UC1, UC2, ...
-    Summarise these using the use-case template below.
 
 | TODO: UC1        | TODO: Locate nearest EV charging point | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Locate the nearest EV charging point to driver. |
+| **Description** | Locate the nearest EV charging point to driver. |
 | **Actors** | TODO: Electric vehical driver |
 | **Assumptions** | TODO: Browser has geo locqtion</td></tr>
 | **Steps** |      1. View table of EV charging points
