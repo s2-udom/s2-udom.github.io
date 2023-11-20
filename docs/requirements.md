@@ -63,11 +63,8 @@ FR2.1
 TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
-NFR2.1: The system should use a default location of either the previous location inputted or the Bristol City Centre (Reliability) <br/>
-NFR2.2: The previously inputted location by the user should be saved in a secure and encrypted location (Security)<br/>
-NFR2.3: Source code should be available on GitHub (Maintainability)<br/>
-NFR2.4: The app should work on a standard iPhone or android phone screen, but also fit to PC screens (Portability)<br/>
-NFR2.5: The app should be quick to respond to the user's requests (Performance efficiency)<br/>
-NFR2.6: The app should also work on website browsers (Compatibility)<br/>
-NFR2.7: The markers shouldn't be so big that they obscure the map or negatively impact usage (Usability)<br/>
-NFR2.8: Data should be regularly checked and updated (Functional suitability)
+NFR2.1: The previously inputted location by the user should be saved in a secure and encrypted location (Security)<br/>
+NFR2.2: The app should work on a standard iPhone or android phone screen, but also fit to PC screens (Portability)<br/>
+NFR2.3: The app should be quick to respond to the user's requests (Performance efficiency)<br/>
+NFR2.4: The app should also work on website browsers (Compatibility)<br/>
+NFR2.5: Data should be regularly checked and updated (Functional suitability)
