@@ -27,15 +27,15 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Non-functional** |                                       |
 | **Issues** |                                               |
 
-|   UC2        | Show all nearby EV charging points in a list according to distance from user | 
+|   UC2        | Locate nearest rapid and superfast charging points near user | 
 | -------------------------------------- | ------------------- |
-| **Description** | Locate the nearest EV charging point to driver. |
+| **Description** | Locate nearest rapid and superfast charging points near user |
 | **Actors** | Electric vehical driver |
 | **Assumptions** |  Browser has geo location</td></tr>
 | **Steps** |      1. View table of EV charging points
 |           |      2. Ask user for persmission to access their location
 |           |      3. Give permission for geo-location
-|           |      4. Retrieve nearest EV charging points from the database
+|           |      4. Retrieve nearest EV super fast charging points from the database
 |           |      5. View table of nearest EV charging points
 | **Variations** |                                            |
 | **Non-functional** |                                        |
