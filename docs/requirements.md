@@ -42,7 +42,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
 
 
-TODO: Your Use-Case diagram should include all use-cases.
+
 
 ![Insert your Use-Case Diagram Here](images/EV.png)
 
