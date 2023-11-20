@@ -49,13 +49,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 ## Software Requirements Specification
 ### Functional requirements
 
-FR1 indicates UC1
-FR2 indicates UC2
-
-FR1.1</td></tr>
-FR1.2
-FR1.3
-FR1.4 
+FR1 indicates UC1 and FR2 indicates UC2
 
 FR2.1 The system should be able to collect the data of where the EV charging points are from Open Data Bristol
 
