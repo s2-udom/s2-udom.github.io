@@ -58,6 +58,7 @@ FR1.3
 FR1.4 
 
 FR2.1 The system should be able to collect the data of where the EV charging points are from Open Data Bristol
+
 FR2.2 The system should ask/obtain permission from the user to access their location or have the user input a location
 FR2.3 The system should display both user location and EV charging point locations using different respective markers
 FR2.4 The system should display the distances between the user location and EV charging point locations
