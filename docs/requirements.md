@@ -29,9 +29,9 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 
 |   UC2        | Show all nearby EV charging points in a list according to distance from user | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Locate the nearest EV charging point to driver. |
-| **Actors** | TODO: Electric vehical driver |
-| **Assumptions** | TODO: Browser has geo locqtion</td></tr>
+| **Description** | Locate the nearest EV charging point to driver. |
+| **Actors** | Electric vehical driver |
+| **Assumptions** |  Browser has geo location</td></tr>
 | **Steps** |      1. View table of EV charging points
 |           |      2. Ask user for persmission to access their location
 |           |      3. Give permission for geo-location
