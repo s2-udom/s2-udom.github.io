@@ -1,0 +1,105 @@
+header {
+    color: rgba(255, 255, 255, 0.719); 
+    font-size: xx-large;
+    font-family: 'Vina Sans', sans-serif;
+    grid-area: ph; 
+}
+
+#search { 
+    float: right; 
+    margin-top: 30px;
+}
+
+.green { 
+    background-color: rgba(26, 37, 241, 0.87);
+}
+
+.padded {
+     padding:50px 10px; 
+}
+
+#bar{
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+#home{
+    position: relative;
+    top: -80px;
+    font-size: 25px;  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'ph ph ph ph ph'
+        'ln cn cn cn cn'
+        'ln cn cn cn cn'
+        'ln cn cn cn cn';
+}
+
+nav {
+    grid-area: ln;
+}
+
+main {
+    grid-area: cn;
+}
+
+#image1 { 
+    width: 500px; 
+    length: 75px;
+    float:inline-;
+}
+
+button{
+    margin-top: 5px;
+    width: 200px;
+    height: 75px;
+    background-color: rgb(26, 37, 241, 0.87);
+    text-emphasis-color: rgb(24, 24, 230);
+    cursor: pointer; /*mouse pointer on hover*/
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
+p{
+    width: 1200px;
+    margin-left: 330px;
+}
+
+#map {
+    width: 1500px;
+    height: 1600px;
+}
+
+#table {
+    margin-top: 5px;
+    width: 1500px;
+    height: 1600px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#map {
+    position: absolute;
+    top: 190px;
+    left: 310px;
+    height: 78%;
+    width: 80%;
+} 
