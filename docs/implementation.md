@@ -18,8 +18,7 @@ The main app is directed in the app folder. The index.html is the splash page. A
 └── readme.md
 
 ## Software Architecture
-TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
-
+The main app uses data from Bristol Open Data, and uses maps supplied by Mapbox. This is a service-orientated architecture.
 ![Insert your component Diagram here](images/EV1.png)
 
 ## Bristol Open Data API
