@@ -20,7 +20,7 @@ The main app is directed in the app folder. The index.html is the splash page. A
 
 ## Software Architecture
 The main app uses data from Bristol Open Data, and uses maps supplied by Mapbox. This is a service-orientated architecture.
-![Insert your component Diagram here](images/EV1.png)
+![Insert your component Diagram here](images/EV2.png)
 
 ## Bristol Open Data API
 TODO: Document each query to Bristol Open Data
