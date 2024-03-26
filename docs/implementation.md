@@ -20,7 +20,7 @@ The main app is directed in the app folder. The index.html is the splash page. A
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
-![Insert your component Diagram here](images/component.png)
+![Insert your component Diagram here](images/EV1.png)
 
 ## Bristol Open Data API
 TODO: Document each query to Bristol Open Data
