@@ -1,7 +1,8 @@
 # Implementation
 
 ## Introduction
-TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
+FindByType.html utilises Bristol Open Data API and the Mapbox API to pinpoint nearby electric vehicle charging points. It presents charging points in a table which features name, location, model, and energy.
+
 
 ## Project Structure
 TODO: Provide an outline of the project folder structure and the role of each file within it.
