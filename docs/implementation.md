@@ -15,14 +15,15 @@ provide a table listing the number of jslint warnings/reports for each module.
 In the "App" directory of the project, we have several files dedicated to facilitating users in finding electric vehicle charging stations conveniently. "FilterCharger.html" enables users to filter charging stations based on their preferences, while its corresponding stylesheet "FilterChargerStyle.css" ensures a visually appealing interface. Similarly, "FindNearestCharger.html" assists users in locating the nearest charging stations, with its associated stylesheet "FindNearestChargerStyle.css" providing the necessary visual design. These files collectively form the user interface components of the application, streamlining the process of accessing electric vehicle charging infrastructure. Additionally, "INDEX.html" serves as a landing page, providing users with an entry point to the application.
 
 ├── EVAPP<br>
-    ├── INDEX.html<br>
-    ├── INDEXstyle.css<br>
-    ├── FindNearest.html<br>
-    ├── FindNearestStyle.css<br>
-    ├── FilterPage.html<br>
-    ├── FilterPageStyle.css<br>
-    ├── FindByType.html<br>
-    └── FindByTypeStyle.css<br>
+|   ├── electric.jpb<br>
+|   ├── INDEX.html<br>
+|   ├── INDEXstyle.css<br>
+|   ├── FindNearest.html<br>
+|   ├── FindNearestStyle.css<br>
+|   ├── FilterPage.html<br>
+|   ├── FilterPageStyle.css<br>
+|   ├── FindByType.html<br>
+|   └── FindByTypeStyle.css<br>
 
 
 ## Software Architecture
