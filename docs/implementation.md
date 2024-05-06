@@ -2,7 +2,7 @@
 
 ## Introduction
 <br>
-The system that is implemented for electric vehicle charging points in Bristol utillzes the data from bristol open data. The dataset includes informantion on 409 charging points in Bristol. Additionally details are provided some of which would prove useful to the user but many of which are not relevant such as device id, owner organisation name or device reference. This could prove problematic so EV charging point information is filtered via this application.
+The system that is implemented for electric vehicle charging points in Bristol utillzes the data from bristol open data. The dataset includes information on 409 charging points in Bristol. Additionally details are provided some of which would prove useful to the user but many of which are not relevant such as device id, owner organisation name or device reference. This could prove problematic so EV charging point information is filtered via this application.
 <br>
 
 ## Project Structure
@@ -40,7 +40,10 @@ The main app uses data from Bristol Open Data, and uses maps supplied by Mapbox.
 ![Insert your component Diagram here](images/EV2.png)
 
 ## Bristol Open Data API
-TODO: Document each query to Bristol Open Data
+FindNearest.hmtl makes two requests to the Bristol Open Data API. First, in the fetchChargerData() function, it retrieves charging point data based on the user's location. Then, within sortChargerDataByDistance(), it calculates distances between each charger and the user, sorting and displaying the nearest ones.
 
+FilterCharger.html sends two requests to the Bristol Open Data API. Firstly, in the fetchChargerData() function, it retrieves charging point data based on the user's geolocation. Then, within applyFilters(), it filters the chargers based on user-defined criteria and displays the nearest ones on the map and in the table. These queries ensure that users receive accurate and relevant information about nearby charging stations.<br>
+
+# UML DIAGRAM
 ![UML Class diagrams representing JSON query results](images/class1.png)
 TODO: Repeat as necessary
