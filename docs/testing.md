@@ -18,6 +18,15 @@ Create a requirements traceability matrix to validate the completeness of the pr
 
 | Use-Case ID | Requirement ID | Test Case | Status |
 |-------------| -------------- | --------- | ------ |
+|  UC1            |          |The system should allow the user to find the nearest charger|Pass|
+|UC1 | |The system should add markers for each charger on the map |Pass|
+|UC1 | |The system should get permission to access user location|Pass|
+|UC1 | |The system must query the database to get the charger coordinates.|Pass|
+|UC2 | |The system should allow the user to find and filter chargers based on their type|Not tested yet|
+|UC3 | |The system should provide the user with link to directions to the charger using UC3|Not implemented yet|
+|UC1 UC2 UC3 | |The source code should be accessable from GitHub (Maintainability).|Pass|
+|UC1 UC2| |The app should return formatted data to the user within 5 seconds (Performance Efficiency).|Pass|
+|UC1 UC2| |The app should work on different browsers e.g. Chrome and Safari. And the app should work on different types of devices e.g. Mobile and Desktop (Compatability).|Pass|
 
 
 
