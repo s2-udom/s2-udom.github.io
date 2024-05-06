@@ -45,5 +45,5 @@ FindNearest.hmtl makes two requests to the Bristol Open Data API. First, in the 
 FindByType.html sends two requests to the Bristol Open Data API. Firstly, in the fetchChargerData() function, it retrieves charging point data based on the user's geolocation. Then, within applyFilters(), it filters the chargers based on user-defined criteria and displays the nearest ones on the map and in the table. These queries ensure that users receive accurate and relevant information about nearby charging stations.<br>
 
 ### UML DIAGRAM
-![UML Class diagrams representing JSON query results](images/class1.png)
-TODO: Repeat as necessary
+![UML Class diagrams representing JSON query results](images/UML.png)
+
