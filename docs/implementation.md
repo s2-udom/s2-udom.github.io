@@ -3,7 +3,7 @@
 ## Introduction
 <br>
 The system that is implemented for electric vehicle charging points in Bristol utillzes the data from bristol open data. The dataset includes informantion on 409 charging points in Bristol. Additionally details are provided some of which would prove useful to the user but many of which are not relevant such as device id, owner organisation name or device reference. This could prove problematic so EV charging point information is filtered via this application.
-
+<br>
 ## Project Structure
 In the "EVAPP" folder, there are various .html and .css files which are listed below:<br>
 <br>
