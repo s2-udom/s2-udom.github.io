@@ -18,7 +18,7 @@ In the "App" directory of the project, we have several files dedicated to facili
     ├── INDEX.html<br>
     ├── INDEXstyle.css<br>
     ├── FindNearest.html<br>
-    ├── FindNearestStyle.css
+    ├── FindNearestStyle.css<br>
     ├── FilterPage.html<br>
     ├── FilterPageStyle.css<br>
     ├── FindByType.html<br>
