@@ -8,3 +8,4 @@ An app that locates the nearest electric vehicle charging point. Uses the EV cha
 4. [Implementation](docs/implementation.md)
 5. [Testing](docs/testing.md)
 6. [Deployment](docs/deployment.md)
+7. [Code]
