@@ -1,18 +1,13 @@
 # Implementation
 
 ## Introduction
-
-INDEX.html is the landing page and provides an entry point to the application along with a small description of the app and how to navigate it.
-FindNearestCharger.html utilises Bristol Open Data API and the Mapbox API to pinpoint nearby electric vehicle charging points. It presents charging points in a table which features name, location, model, and energy.
-FilterCharger.html collects user input to filter charger results. It asks for charger type, speed and availability then saves user input so what when "NEXT" is clicked the FilterByType.html page provides filtered charger results.
-FilterByType.html uses the same method as FindNearestCharger and provides table of EV charging points; filtering out locations which are not to the users needs (as specified on the previous FilterCharger.html page).
-The dataset is obtained from the Bristol Open Data API. Unecessary information regarding electric vehicle charging points are filtered out.
-
+<br>
+The system that is implemented for electric vehicle charging points in Bristol utillzes the data from bristol open data. The dataset includes informantion on 409 charging points in Bristol. Additionally details are provided some of which would prove useful to the user but many of which are not relevant such as device id, owner organisation name or device reference. This could prove problematic so EV charging point information is filtered via this application.
 
 ## Project Structure
 In the "EVAPP" folder, there are various .html and .css files which are listed below:<br>
 <br>
-INDEX.html is the landing page and provides an entry point to the application along with a small description of the app and how to navigate it.<br>
+Index.html is the landing page and provides an entry point to the application along with a small description of the app and how to navigate it.<br>
 <br>
 FindNearestCharger.html utilises Bristol Open Data API and the Mapbox API to pinpoint nearby electric vehicle charging points. It presents charging points in a table which features name, location, model, and energy.<br>
 <br>
@@ -24,8 +19,8 @@ The corresponding css files are used to create a visually appealing and asthetic
 <pre>
    EVAPP<br>
       ├── electric.jpg<br>
-      ├── INDEX.html<br>
-      ├── INDEXstyle.css<br>
+      ├── Index.html<br>
+      ├── Indexstyle.css<br>
       ├── FindNearest.html<br>
       ├── FindNearestStyle.css<br>
       ├── FilterPage.html<br>
