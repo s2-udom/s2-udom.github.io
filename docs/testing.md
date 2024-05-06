@@ -6,10 +6,14 @@ Testing for the Car Charger Finder application will utilise both manual and auto
 <br>
 Below is a table of tests that will be run...<br>
 <br>
-| Test case     | Description   | Testing Approach |
-| ------------- | ------------- | ---------------- |
-| Content Cell  | Content Cell  | Content Cell     |
-| Content Cell  | Content Cell  | Content Cell     |
+| Test case     | Description   | Testing Approach | Prerequisites  | Test Data  |
+| ------------- | ------------- | ---------------- | -------------- | -----------|
+| UC1 -FR1.1    | Content Cell  | Content Cell     |
+| UC1 - FR1.2   | Content Cell  | Content Cell     |
+| UC1 -FR1.    | Content Cell  | Content Cell     |
+| UC1 - FR1.2   | Content Cell  | Content Cell     |
+| UC1 -FR1.1    | Content Cell  | Content Cell     |
+| UC1 - FR1.2   | Content Cell  | Content Cell     |
 ## Test Runs
 TODO: For each test described above, indicate the current status. 
 Create a requirements traceability matrix to validate the completeness of the product.
