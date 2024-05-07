@@ -16,6 +16,7 @@ User presses Find Nearest button and is navigated to new page where the app asks
 <br>
 ![Insert screenshots here](images/Geolocation.png)<br>
 <br>
-Nearest EV charging points are displayed in table with user location pinned onto map. EV charging point locations are also displayed on the map with different coloured pins. 
-
+Nearest EV charging points are displayed in table with user location pinned onto map. EV charging point locations are also displayed on the map with different coloured pins. <br>
+<br>
+(images/UC1.png)
 Use-Case 2
