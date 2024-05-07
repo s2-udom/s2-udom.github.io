@@ -3,7 +3,7 @@
 ## Release Notes
 The functionality of this application depends on the Bristol Open Data API and MapBox API. If either of these services is unavailable, the application will not operate as intended. The Deployment Diagram depicted below illustrates the interaction of this web application with Bristol Open Data and MapBox.
 
-![Insert Deployment diagram here](images/deployment.png)
+![Insert Deployment diagram here](images/Boxes.png)
 
 # User guide
 
