@@ -16,18 +16,15 @@ FilterCharger.html collects user input to filter charger results. It asks for ch
 <br>
 FilterByType.html uses the same method as FindNearestCharger and provides table of EV charging points; filtering out locations which are not to the users needs (as specified on the previous FilterCharger.html page).<br>
 <br>
-The corresponding css files are used to create a visually appealing and asthetic interface. The electric.jpg file is a background image for the INDEX.html landing page.<br>
+The StyleSheet.css file is used to create a visually appealing and asthetic interface. The electric.jpg file is a background image for the Index.html landing page.<br>
 <pre>
    EVAPP<br>
       ├── electric.jpg<br>
       ├── Index.html<br>
-      ├── Indexstyle.css<br>
       ├── FindNearest.html<br>
-      ├── FindNearestStyle.css<br>
       ├── FilterPage.html<br>
-      ├── FilterPageStyle.css<br>
       ├── FindByType.html<br>
-      └── FindByTypeStyle.css<br>
+      └── StyleSheet.css<br>
       
 </pre>
 
