@@ -21,4 +21,5 @@ Nearest EV charging points are displayed in table with user location pinned onto
 <br>
 ![Insert screenshots here](images/UC.png)<br>
 <br>
-Use-Case 2
+<br>
+### Use-Case 2
