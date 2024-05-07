@@ -12,7 +12,8 @@ The functionality of this application depends on the Bristol Open Data API and M
 Use-Case 1
 
 User enters app hitting landing page and reading instructions. 
-![Insert screenshots here](images/Geolocation.png)
+![Insert screenshots here](images/Landing.png)
 User presses Find Nearest button and is navigated to new page where the app asks for permission to obtain the users location.
 ![Insert screenshots here](images/Geolocation.png)
-TODO: Repeat as necessary
+
+Use-Case 2
