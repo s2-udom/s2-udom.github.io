@@ -9,7 +9,10 @@ The functionality of this application depends on the Bristol Open Data API and M
 ![Insert Deployment diagram here](images/deployment.png)
 
 # User guide
-TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
+Use-Case 1
 
-![Insert screenshots here](images/screenshot.png)
+User enters app hitting landing page and reading instructions. 
+![Insert screenshots here](images/Geolocation.png)
+User presses Find Nearest button and is navigated to new page where the app asks for permission to obtain the users location.
+![Insert screenshots here](images/Geolocation.png)
 TODO: Repeat as necessary
