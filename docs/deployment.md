@@ -1,7 +1,7 @@
 # Deployment
 
 ## Release Notes
-The functionality of this application depends on the Bristol Open Data API and MapBox API. If either of these services is unavailable, the application will not operate as intended. The Deployment Diagram depicted below illustrates the interaction of this web application with Bristol Open Data and MapBox.
+In order for this application to remain functional, Bristol Open Data API and MapBox API must be abailable. If not the application will not operate correctly. The diagram below illustrates the relationship between the EV Charging Point Finder App and both Bristol Open Data and MapBox.
 
 ![Insert Deployment diagram here](images/Boxes.png)
 
