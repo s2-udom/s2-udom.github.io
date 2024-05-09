@@ -41,6 +41,21 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Non-functional** |                                        |
 | **Issues** |                                                |
 
+|   UC3        | Find all or filtered charging points within a given distance to user | 
+| -------------------------------------- | ------------------- |
+| **Description** | Locate all or filtered charging points within a given distance to user |
+| **Actors** | Electric vehical driver |
+| **Assumptions** |  Browser has geo location</td></tr>
+| **Steps** |      1. User selects rapid charging points
+|           |      2. App asks user for persmission to access their location
+|           |      3. User gives permission for geo-location
+|           |      4. User inputs maximum distance to search for chargers along with type preferences (rapid, fast etc.)
+|           |      4. App retrieves EV charging points from the database and filters out chargers which aren't within given distance or of specified type
+|           |      5. App displays these in a table in order of least distance from user
+| **Variations** |                                            |
+| **Non-functional** |                                        |
+| **Issues** |                                                |
+
 
 
 
@@ -56,6 +71,7 @@ FR1.2 The system should ask/obtain permission from the user to access their loca
 FR1.3 The system should list all the EV charging point locations in a list displaying the distances to them<br/>
 
 FR2.1 The system should be able to distinguish between standard charging points and superfast/rapid charging points
+FR3.1 The system should be able to simulataneously filter distance and charger speed.
  
 
 
