@@ -14,7 +14,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 
 ### Use Cases
 
-|   UC1        | Show all nearby EV charging points in a list according to distance from user | 
+|   UC1 (John)       | Show all nearby EV charging points in a list according to distance from user | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate the nearest EV charging point to driver. |
 | **Actors** |   Electric vehicle driver |
@@ -28,7 +28,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Non-functional** |                                       |
 | **Issues** |                                               |
 
-|   UC2        | Locate nearest rapid and superfast charging points near user | 
+|   UC2  (Sam)      | Locate nearest rapid and superfast charging points near user | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate nearest rapid and superfast charging points near user |
 | **Actors** | Electric vehicle driver |
@@ -42,7 +42,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 | **Non-functional** |                                        |
 | **Issues** |                                                |
 
-|   UC3        | Find all or filtered charging points within a given distance to user | 
+|   UC3  (Sam)      | Find all or filtered charging points within a given distance to user | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate all or filtered charging points within a given distance to user |
 | **Actors** | Electric vehicle driver |
