@@ -1,58 +1,24 @@
 <script src="https://kit.fontawesome.com/0ae874aa62.js" crossorigin="anonymous"></script>
-<HTML>
-
-<head>
-    <title>EV CHARGING POINT FINDER</title>
-    <!-- font links -->
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
-    <!-- icon links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script>
-
-        function outputTable(data) {
-            console.log(data);
-            let tbody = document.getElementById("results");
-            let features = data.features;
-            for (let i = 0; i < features.length; i++) {
-                let row = document.createElement('tr');
-                tbody.appendChild(row);
-                let attributes = features[i].attributes;
-                
-                // Create table cells for each attribute
-                let chargepointCell = document.createElement('td');
-                chargepointCell.textContent = attributes.Chargepoint;
-                row.appendChild(chargepointCell);
-
-                let modelVariantCell = document.createElement('td');
-                modelVariantCell.textContent = attributes.Model_Variant;
-                row.appendChild(modelVariantCell);
-
-                let locationCell = document.createElement('td');
-                locationCell.textContent = attributes.Location;
-                row.appendChild(locationCell);
-
-                let energyCell = document.createElement('td');
-                energyCell.textContent = attributes.Energy__kWh_;
-                row.appendChild(energyCell);
-            }
-        }
-
-        function search(term) {
-            let url = 'https://services2.arcgis.com/a4vR8lmmksFixzmB/arcgis/rest/services/Replicate_EV_Charge_point_data_April_2020/FeatureServer/0/query?where=1%3D1&outFields=Chargepoint,Location,Energy__kWh_,Model_Variant&outSR=4326&f=json'
-            fetch(url,{ method: 'get' , headers: { Accept: "application/JSON" }})
-            .then(res => res.json())
-            .then(data => outputTable(data));
-        }
-
-        fetchData(); // Call the function to fetch data when the page loads
-    </script>
-
-</head>
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EV CHARGING POINT FINDER</title>
+        <!-- font links -->
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+        <!-- icon links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- map links -->
+        <meta name = "viewport" content = "initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href = "https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel = "stylesheet">
+        <script src = "https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+        <script>
+            const MY_TOKEN = "pk.eyJ1Ijoiam9obmdhYmF0IiwiYSI6ImNsdDJzZGpldjAxZmQycW5ycXZvN3J1djUifQ.9XqbMT7PuwKh0pMMITKSPg";
+        </script>
+    
+    </head>
 <body>
     <div class="grid-container">
         <header class="green padded">
@@ -60,47 +26,273 @@
                 <span id="search">
                 <input id="bar" type="text" placeholder="Search..">
                 <i style="font-size:20px" class="fa">&#xf002;</i>
-                <a href="http://127.0.0.1:5500/INDEX.html"><i id="home" class="fa-solid fa-house"></i></a>
+                <a href="http://127.0.0.1:5500/Index.html"><i id="home" class="fa-solid fa-house"></i></a>
             </span>
         </header>
-        <nav>
-            <div>
-            <button onclick="location.href='FindNearest.html'" class="button1">Find nearest</button>
-            </div>
-            <button onclick="location.href='FindByType.html'" class="button1">Find by type</button>
-        </nav>
-
-        <main>
-            <!DOCTYPE html>
-<html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Output</title>
-</head>
-            <h2>Data Output Table</h2>
-            <table id="outputTable">
-                <thead>
-                    <tr>
-                        <th>Chargepoint</th>
-                        <th>Model Variant</th>
-                        <th>Location</th>
-                        <th>Energy (kWh)</th>
-                    </tr>
-                </thead>
-                <tbody id="results">
-                    <!-- Table rows will be dynamically added here -->
-                </tbody>
-            </table>
-        
-        </main>
+       
     </div>
+    <div class="button-group">
+        <button id="rapid-btn">Quick-Search Rapid</button>
+    </div>
+        <!-- Filter Section -->
+        <div class="filter">
+            <!-- Type Filter -->
+            <select id="charger-type">
+                <option value="">All</option>
+                <option value="Fast">Fast</option>
+                <option value="Rapid">Rapid</option>
+            </select>
+
+            <!-- Distance Filter -->
+            <label for="distance">Distance (miles):</label>
+            <input type="number" id="distance" min="0">
+
+            <!-- Apply Filters Button -->
+            <button id="apply-filters">Apply Filters</button>
+
+        </div>
+
+        <!-- Charger Information Section -->
+        <div class="ln" id="charger-info">
+            <!-- Result Title -->
+            <h2 id="result-title"></h2>
+            <!-- Charger Information Table -->
+            <table class="charger-table2">
+                <thead><tr><th>Name</th><th>Location</th><th>Type</th><th>Distance (miles)</th></tr></thead>
+                <tbody class="charger-table-body"></tbody>
+            </table>
+        </div>
+
+        <!-- Map Section -->
+        <div class="cn" id="map"></div>
+    </div>
+
+    <!-- Mapbox Script -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
     <script>
-        let q = new URLSearchParams(location.search);
-        let t = q.get('searchterm');
-        search(t);
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set Mapbox access token
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbmlja2VyIiwiYSI6ImNsc3NzcTFtNjBld3cycXBnNWZqbGQ0aXAifQ.1wf_L1NCQ2en-cXYyLAdDQ';
+
+            // Initialize variables
+            let map = null; // Define map variable globally
+            let userLocation = null;
+            let chargerData = null;
+
+            // Function to apply filters
+            function applyFilters() {
+                // Clear the existing map
+                if (map) {
+                    map.remove();
+                }
+
+                // Get filter values
+                const chargerTypeFilter = document.getElementById('charger-type').value;
+                let distanceFilter = parseFloat(document.getElementById('distance').value) || Infinity;
+
+                // Convert distance from miles to kilometers
+                distanceFilter = milesToKilometers(distanceFilter);
+
+                // Get all charger features
+                let filteredChargers = chargerData.features;
+
+                // Apply charger type filter
+                if (chargerTypeFilter) {
+                    filteredChargers = filteredChargers.filter(charger => charger.attributes.charger_type === chargerTypeFilter);
+                }
+
+                // Filter out chargers beyond the specified distance
+                filteredChargers = filteredChargers.filter(charger => {
+                    const distance = getDistance(userLocation.latitude, userLocation.longitude, charger.attributes.location_1_Y, charger.attributes.location_1_X);
+                    return distance <= distanceFilter;
+                });
+
+                // Sort chargers by distance
+                filteredChargers.sort((a, b) => {
+                    const distanceA = getDistance(userLocation.latitude, userLocation.longitude, a.attributes.location_1_Y, a.attributes.location_1_X);
+                    const distanceB = getDistance(userLocation.latitude, userLocation.longitude, b.attributes.location_1_Y, b.attributes.location_1_X);
+                    return distanceA - distanceB;
+                });
+
+                // Display filtered chargers on the map and in the table
+                displayChargers(filteredChargers);
+
+                // Add user marker after applying filters
+                addUserMarker(userLocation.latitude, userLocation.longitude);
+            }
+
+            // Function to clear charger markers from the map
+            function clearChargerMarkers() {
+                const markers = document.querySelectorAll(".marker");
+                markers.forEach(marker => marker.remove());
+            }
+
+            // Function to display chargers on the map and in the table
+            function displayChargers(chargers) {
+                clearChargerMarkers();
+                const chargerInfoContainer = document.getElementById("charger-info");
+                const chargerTableBody = chargerInfoContainer.querySelector(".charger-table-body");
+                const resultTitle = chargerInfoContainer.querySelector("#result-title");
+
+                chargerTableBody.innerHTML = "";
+
+                chargers.forEach(charger => {
+                    const { site_name, postcode, charger_type } = charger.attributes;
+                    const distance = getDistance(userLocation.latitude, userLocation.longitude, charger.attributes.location_1_Y, charger.attributes.location_1_X);
+
+                    const chargerTableRow = document.createElement("tr");
+                    chargerTableRow.innerHTML = `
+                        <td>${site_name}</td>
+                        <td>${postcode}</td>
+                        <td>${charger_type}</td>
+                        <td>${convertToMiles(distance).toFixed(2)}</td>
+                    `;
+                    chargerTableBody.appendChild(chargerTableRow);
+                    addChargerMarker(charger.attributes.location_1_Y, charger.attributes.location_1_X, site_name, postcode);
+                });
+            }
+            //Function to only include rapid chargers
+            function applyFiltersRapid() {
+                // Clear the existing map
+                if (map) {
+                    map.remove();
+                }
+
+                // Get filter values
+                const chargerTypeFilter = "Rapid";
+                let distanceFilter = parseFloat(document.getElementById('distance').value) || Infinity;
+
+                // Convert distance from miles to kilometers
+                distanceFilter = milesToKilometers(distanceFilter);
+
+                // Get all charger features
+                let filteredChargers = chargerData.features;
+
+                // Apply charger type filter
+                if (chargerTypeFilter) {
+                    filteredChargers = filteredChargers.filter(charger => charger.attributes.charger_type === chargerTypeFilter);
+                }
+
+                // Filter out chargers beyond the specified distance
+                filteredChargers = filteredChargers.filter(charger => {
+                    const distance = getDistance(userLocation.latitude, userLocation.longitude, charger.attributes.location_1_Y, charger.attributes.location_1_X);
+                    return distance <= distanceFilter;
+                });
+
+                // Sort chargers by distance
+                filteredChargers.sort((a, b) => {
+                    const distanceA = getDistance(userLocation.latitude, userLocation.longitude, a.attributes.location_1_Y, a.attributes.location_1_X);
+                    const distanceB = getDistance(userLocation.latitude, userLocation.longitude, b.attributes.location_1_Y, b.attributes.location_1_X);
+                    return distanceA - distanceB;
+                });
+
+                // Display filtered chargers on the map and in the table
+                displayChargers(filteredChargers);
+
+                // Add user marker after applying filters
+                addUserMarker(userLocation.latitude, userLocation.longitude);
+            }
+
+            // Function to clear charger markers from the map
+            function clearChargerMarkers() {
+                const markers = document.querySelectorAll(".marker");
+                markers.forEach(marker => marker.remove());
+            }
+
+            // Function to display chargers on the map and in the table
+            function displayChargers(chargers) {
+                clearChargerMarkers();
+                const chargerInfoContainer = document.getElementById("charger-info");
+                const chargerTableBody = chargerInfoContainer.querySelector(".charger-table-body");
+                const resultTitle = chargerInfoContainer.querySelector("#result-title");
+
+                chargerTableBody.innerHTML = "";
+
+                chargers.forEach(charger => {
+                    const { site_name, postcode, charger_type } = charger.attributes;
+                    const distance = getDistance(userLocation.latitude, userLocation.longitude, charger.attributes.location_1_Y, charger.attributes.location_1_X);
+
+                    const chargerTableRow = document.createElement("tr");
+                    chargerTableRow.innerHTML = `
+                        <td>${site_name}</td>
+                        <td>${postcode}</td>
+                        <td>${charger_type}</td>
+                        <td>${convertToMiles(distance).toFixed(2)}</td>
+                    `;
+                    chargerTableBody.appendChild(chargerTableRow);
+                    addChargerMarker(charger.attributes.location_1_Y, charger.attributes.location_1_X, site_name, postcode);
+                });
+            }
+            // Function to add charger marker on the map
+            function addChargerMarker(lat, lon, siteName, postcode) {
+                const location = `${siteName}<br>${postcode}`;
+                const marker = new mapboxgl.Marker({ color: "red" })
+                    .setLngLat([lon, lat])
+                    .setPopup(new mapboxgl.Popup().setHTML(location))
+                marker.getElement().classList.add("marker");
+            }
+
+            // Event listener for applying filters
+            document.getElementById("apply-filters").addEventListener("click", applyFilters);
+            document.getElementById("rapid-btn").addEventListener("click", applyFiltersRapid);
+            // Function to fetch charger data
+            function fetchChargerData() {
+                if (!userLocation) return;
+                const { latitude: userLat, longitude: userLon } = userLocation;
+                const url = `https://services2.arcgis.com/a4vR8lmmksFixzmB/arcgis/rest/services/Electric_Vehicle_Charging_Points/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json&lat=${userLat}&lon=${userLon}`;
+                fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    chargerData = data;
+                    applyFilters();
+                })
+                .catch(error => console.error('Error fetching charger data:', error));
+            }
+
+            // Function to get user location
+            function getUserLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        position => {
+                            userLocation = position.coords;
+                            fetchChargerData();
+                        },
+                        error => console.error('Error getting user location:', error)
+                    );
+                } else {
+                    console.error('Geolocation is not supported by this browser.');
+                }
+            }
+
+            
+
+            // Function to calculate distance between two coordinates
+            function getDistance(lat1, lon1, lat2, lon2) {
+                const R = 6371; // Radius of the Earth in kilometers
+                const dLat = deg2rad(lat2 - lat1);
+                const dLon = deg2rad(lon2 - lon1);
+                const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                return R * c; // Distance in kilometers
+            }
+
+            // Function to convert degrees to radians
+            function deg2rad(deg) {
+                return deg * (Math.PI / 180);
+            }
+
+            // Function to convert kilometers to miles
+            function convertToMiles(kilometers) {
+                return kilometers * 0.621371;
+            }
+
+            // Function to convert miles to kilometers
+            function milesToKilometers(miles) {
+                return miles * 1.60934;
+            }
+            // Get user location
+            getUserLocation();
+        });
     </script>
 </body>
-
-</HTML>
+</html>
