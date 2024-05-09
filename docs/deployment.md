@@ -42,7 +42,7 @@ User enters FindByType.html page and all EV charging points are displayed in a t
 <br>
 User can specify maximum distance to search for EV chargers at by inputing distance in miles (example below 3) in the filter box as shown...<br>
 <br>
-![Insert screenshots here](images/Distance.png)<br>
+![Insert screenshots here](images/ByDistance.png)<br>
 <br>
 User can simultaneously filter for charger_type and distance as shown below...<br>
 <br>
