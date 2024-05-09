@@ -32,27 +32,28 @@
        
     </div>
     <div class="button-group">
+        //create quick-search rapid button
         <button id="rapid-btn">Quick-Search Rapid</button>
     </div>
-        <!-- Filter Section -->
+        //Create Filter 
         <div class="filter">
-            <!-- Type Filter -->
+            //charger_type dropbox
             <select id="charger-type">
                 <option value="">All</option>
                 <option value="Fast">Fast</option>
                 <option value="Rapid">Rapid</option>
             </select>
 
-            <!-- Distance Filter -->
+            //distance box
             <label for="distance">Distance (miles):</label>
             <input type="number" id="distance" min="0">
 
-            <!-- Apply Filters Button -->
-            <button id="apply-filters">Apply Filters</button>
+            //apply filters button
+            <button id="apply-filters">Apply</button>
 
         </div>
 
-        <!-- Charger Information Section -->
+        //Charger Table
         <div class="ln" id="charger-info">
             <!-- Result Title -->
             <h2 id="result-title"></h2>
@@ -63,11 +64,11 @@
             </table>
         </div>
 
-        <!-- Map Section -->
+        //Map section
         <div class="cn" id="map"></div>
     </div>
 
-    <!-- Mapbox Script -->
+    //Mapbox Script
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -151,7 +152,7 @@
                     addChargerMarker(charger.attributes.location_1_Y, charger.attributes.location_1_X, site_name, postcode);
                 });
             }
-            //Function to only include rapid chargers
+            //Function to only include rapid chargers for Quick-Search Rapid button
             function applyFiltersRapid() {
                 // Clear the existing map
                 if (map) {
