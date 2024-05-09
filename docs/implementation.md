@@ -22,7 +22,6 @@ The StyleSheet.css file is used to create a visually appealing and asthetic inte
       ├── electric.jpg<br>
       ├── Index.html<br>
       ├── FindNearest.html<br>
-      ├── FilterPage.html<br>
       ├── FindByType.html<br>
       └── StyleSheet.css<br>
       
