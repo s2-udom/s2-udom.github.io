@@ -6,6 +6,7 @@
 
     As an electric vehicle driver I want to use an app so that I can locate the nearest charging point
     As an electric vehicle driver I want to be able to locate a rapid or superfast electric vehicle charging point so that I can charge my vehicle more quickly
+    As an electric vehicle driver I want to be able to filter out chargers that are to far away or not of my specified type so that it is easier for me to find a suitable charging point
 
 ### Actors
 
@@ -16,7 +17,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 |   UC1        | Show all nearby EV charging points in a list according to distance from user | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate the nearest EV charging point to driver. |
-| **Actors** |   Electric vehical driver |
+| **Actors** |   Electric vehicle driver |
 | **Assumptions** |  Browser has geo location</td></tr>
 | **Steps** |      1. View table of EV charging points
 |           |      2. App asks user for persmission to access their location
@@ -30,7 +31,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 |   UC2        | Locate nearest rapid and superfast charging points near user | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate nearest rapid and superfast charging points near user |
-| **Actors** | Electric vehical driver |
+| **Actors** | Electric vehicle driver |
 | **Assumptions** |  Browser has geo location</td></tr>
 | **Steps** |      1. User selects rapid charging points
 |           |      2. App asks user for persmission to access their location
@@ -44,7 +45,7 @@ Electric vehical driver: Someone who both owns and drives a vehicle powered by e
 |   UC3        | Find all or filtered charging points within a given distance to user | 
 | -------------------------------------- | ------------------- |
 | **Description** | Locate all or filtered charging points within a given distance to user |
-| **Actors** | Electric vehical driver |
+| **Actors** | Electric vehicle driver |
 | **Assumptions** |  Browser has geo location</td></tr>
 | **Steps** |      1. User selects rapid charging points
 |           |      2. App asks user for persmission to access their location
